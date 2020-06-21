@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/carat-service/static/css/main.5f361e03.chunk.css",
+    "main.js": "/carat-service/static/js/main.7260f91c.chunk.js",
+    "main.js.map": "/carat-service/static/js/main.7260f91c.chunk.js.map",
+    "runtime-main.js": "/carat-service/static/js/runtime-main.50c86ae1.js",
+    "runtime-main.js.map": "/carat-service/static/js/runtime-main.50c86ae1.js.map",
+    "static/js/2.7706098b.chunk.js": "/carat-service/static/js/2.7706098b.chunk.js",
+    "static/js/2.7706098b.chunk.js.map": "/carat-service/static/js/2.7706098b.chunk.js.map",
+    "index.html": "/carat-service/index.html",
+    "precache-manifest.530df408cc9f61da325f097da90c1f2f.js": "/carat-service/precache-manifest.530df408cc9f61da325f097da90c1f2f.js",
+    "service-worker.js": "/carat-service/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/carat-service/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.7706098b.chunk.js.LICENSE.txt": "/carat-service/static/js/2.7706098b.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/carat-service/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50c86ae1.js",
+    "static/js/2.7706098b.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.7260f91c.chunk.js"
+  ]
+}
