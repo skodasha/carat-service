@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/carat-service/static/css/main.51fc57b0.chunk.css",
-    "main.js": "/carat-service/static/js/main.35f4acf8.chunk.js",
-    "main.js.map": "/carat-service/static/js/main.35f4acf8.chunk.js.map",
+    "main.js": "/carat-service/static/js/main.a8663863.chunk.js",
+    "main.js.map": "/carat-service/static/js/main.a8663863.chunk.js.map",
     "runtime-main.js": "/carat-service/static/js/runtime-main.50c86ae1.js",
     "runtime-main.js.map": "/carat-service/static/js/runtime-main.50c86ae1.js.map",
-    "static/js/2.db038b09.chunk.js": "/carat-service/static/js/2.db038b09.chunk.js",
-    "static/js/2.db038b09.chunk.js.map": "/carat-service/static/js/2.db038b09.chunk.js.map",
+    "static/js/2.10c5a40e.chunk.js": "/carat-service/static/js/2.10c5a40e.chunk.js",
+    "static/js/2.10c5a40e.chunk.js.map": "/carat-service/static/js/2.10c5a40e.chunk.js.map",
     "index.html": "/carat-service/index.html",
-    "precache-manifest.9d4d1a4138a7f90b93f534ce3c466a45.js": "/carat-service/precache-manifest.9d4d1a4138a7f90b93f534ce3c466a45.js",
+    "precache-manifest.f944aae088c094549e50e59a6a58584e.js": "/carat-service/precache-manifest.f944aae088c094549e50e59a6a58584e.js",
     "service-worker.js": "/carat-service/service-worker.js",
     "static/css/main.51fc57b0.chunk.css.map": "/carat-service/static/css/main.51fc57b0.chunk.css.map",
-    "static/js/2.db038b09.chunk.js.LICENSE.txt": "/carat-service/static/js/2.db038b09.chunk.js.LICENSE.txt"
+    "static/js/2.10c5a40e.chunk.js.LICENSE.txt": "/carat-service/static/js/2.10c5a40e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.50c86ae1.js",
-    "static/js/2.db038b09.chunk.js",
+    "static/js/2.10c5a40e.chunk.js",
     "static/css/main.51fc57b0.chunk.css",
-    "static/js/main.35f4acf8.chunk.js"
+    "static/js/main.a8663863.chunk.js"
   ]
 }
