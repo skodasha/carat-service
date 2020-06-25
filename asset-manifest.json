@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/carat-service/static/css/main.51fc57b0.chunk.css",
-    "main.js": "/carat-service/static/js/main.684cab91.chunk.js",
-    "main.js.map": "/carat-service/static/js/main.684cab91.chunk.js.map",
+    "main.js": "/carat-service/static/js/main.570d552b.chunk.js",
+    "main.js.map": "/carat-service/static/js/main.570d552b.chunk.js.map",
     "runtime-main.js": "/carat-service/static/js/runtime-main.50c86ae1.js",
     "runtime-main.js.map": "/carat-service/static/js/runtime-main.50c86ae1.js.map",
     "static/js/2.db038b09.chunk.js": "/carat-service/static/js/2.db038b09.chunk.js",
     "static/js/2.db038b09.chunk.js.map": "/carat-service/static/js/2.db038b09.chunk.js.map",
     "index.html": "/carat-service/index.html",
-    "precache-manifest.e1e443913f397ccba9fdefc5fdc3a65c.js": "/carat-service/precache-manifest.e1e443913f397ccba9fdefc5fdc3a65c.js",
+    "precache-manifest.bc18ad1d39c0b16c3ef76cfa6e936985.js": "/carat-service/precache-manifest.bc18ad1d39c0b16c3ef76cfa6e936985.js",
     "service-worker.js": "/carat-service/service-worker.js",
     "static/css/main.51fc57b0.chunk.css.map": "/carat-service/static/css/main.51fc57b0.chunk.css.map",
     "static/js/2.db038b09.chunk.js.LICENSE.txt": "/carat-service/static/js/2.db038b09.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.50c86ae1.js",
     "static/js/2.db038b09.chunk.js",
     "static/css/main.51fc57b0.chunk.css",
-    "static/js/main.684cab91.chunk.js"
+    "static/js/main.570d552b.chunk.js"
   ]
 }
