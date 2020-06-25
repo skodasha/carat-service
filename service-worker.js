@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/carat-service/precache-manifest.af4b9e8ffec4d7d8aa5b20ebb621507d.js"
+  "/carat-service/precache-manifest.0bef23570df66d0e71468ee5c0995808.js"
 );
 
 self.addEventListener('message', (event) => {
