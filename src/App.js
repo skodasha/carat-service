@@ -9,8 +9,8 @@ function App() {
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
     <Switch>
-      <Route path='/catalog' exact component={Main}/>
-      <Route path='/' component={Catalog}/>
+      <Route path='/' exact component={Main}/>
+      <Route path='#/catalog' component={Catalog}/>
     </Switch>
   </HashRouter>
 
