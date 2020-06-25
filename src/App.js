@@ -6,12 +6,11 @@ import Main from './pages/Main';
 import Catalog from './pages/Catalog';
 
 function App() {
-
   return (
-    <BrowserRouter basename='/carat-service'>
+    <BrowserRouter basename='carat-service'>
     <Switch>
-      <Route path='/' exact component={Main}/>
-      <Route path='/catalog' component={Catalog}/>
+      <Route path='/catalog' exact component={Main}/>
+      <Route path='/' component={Catalog}/>
     </Switch>
   </BrowserRouter>
 
