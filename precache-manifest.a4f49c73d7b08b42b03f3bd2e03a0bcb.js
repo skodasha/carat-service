@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff79ab55b9f5a0833644ffe7eb858840",
+    "revision": "b87c2aca863d266edf48c70972a72c6f",
     "url": "/carat-service/index.html"
   },
   {
