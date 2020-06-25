@@ -4,7 +4,7 @@ import thunkMiddleware from 'redux-thunk';
 import db from '../database/config';
 
 const SHOW_TOOLS = 'SHOW_TOOLS';
-const DB_NAME = 'tools';
+const DB_NAME = 'строительные_смеси';
 
 const reducerTools = (state = [], action) => {
 	switch (action.type) {
@@ -15,7 +15,7 @@ const reducerTools = (state = [], action) => {
 	}
 };
 
-const database = db.database().ref().child(DB_NAME)
+const database = db.database().ref().child(DB_NAME).child('штукатурка')
 
 let store = createStore(reducerTools, applyMiddleware(thunkMiddleware));
 

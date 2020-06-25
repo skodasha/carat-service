@@ -22,7 +22,7 @@ function Catalog({ fetchTools, tools}) {
     console.log(tools)
     return (<div>
         <Head/>
-        <ToolsList/>
+        <ToolsList tools={tools}/>
         <Footer/>
     </div>) 
 }
