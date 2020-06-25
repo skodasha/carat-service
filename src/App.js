@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import Main from './pages/Main';
@@ -8,12 +8,12 @@ import Catalog from './pages/Catalog';
 function App() {
 
   return (
-    <Router>
+    <BrowserRouter basename='/carat-service'>
     <Switch>
-      <Route path='/carat-service' exact component={Main}/>
-      <Route path='/carat-service/catalog' exact component={Catalog}/>
+      <Route path='/' exact component={Main}/>
+      <Route path='/catalog' component={Catalog}/>
     </Switch>
-  </Router>
+  </BrowserRouter>
 
   );
 }
