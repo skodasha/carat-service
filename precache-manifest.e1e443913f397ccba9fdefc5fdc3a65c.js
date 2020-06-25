@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cae69e524a2db8983d826784124f060c",
+    "revision": "49ec96e1625a7b8524ee0b694814ee46",
     "url": "/carat-service/index.html"
   },
   {
-    "revision": "a22a8a120c21b6ca5a47",
+    "revision": "442b8179ab90c63fa7c6",
     "url": "/carat-service/static/css/main.51fc57b0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/carat-service/static/js/2.db038b09.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a22a8a120c21b6ca5a47",
-    "url": "/carat-service/static/js/main.df11016d.chunk.js"
+    "revision": "442b8179ab90c63fa7c6",
+    "url": "/carat-service/static/js/main.684cab91.chunk.js"
   },
   {
     "revision": "fa2aa54fa7578f509e2d",
