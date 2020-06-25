@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import { fetchTools, showTools } from '../store/store';
-
+import Head from '../components/Head';
+import Header from '../components/Header';
+import Advantages from '../components/Advantages';
+import TopSales from '../components/TopSales';
+import Footer from '../components/Footer';
 import '../styles/main.css';
 
 function Main({ fetchTools, tools}) {
@@ -16,9 +20,39 @@ function Main({ fetchTools, tools}) {
     }, [tools]);
 
     console.log(tools)
-    return <div>
-        <main className="main">
-        <div className="main--section7">
+    return (<div>
+        <Head/>
+        <Header/>
+        <Advantages/>
+        <TopSales/>
+        <YMaps>
+            <Map className='map' defaultState={{
+                center: [54.083866, 28.314445],
+                zoom: 16,
+            }}>
+            <Placemark geometry={[54.083866, 28.314445]} />
+            </Map>
+        </YMaps>
+        <Footer/>
+    </div>) 
+}
+
+const mapStateToProps = (state) => ({
+    tools: state
+});
+
+const mapDispatchToProps = {
+    fetchTools,
+    showTools,
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps,
+)(Main);
+
+/*
+<div className="main--section7">
             <div className="wrapper">
                 <div className='tool'>
                     {
@@ -46,29 +80,4 @@ function Main({ fetchTools, tools}) {
             </div>
         </div>
         </main>
-        <div className="App">
-    <YMaps>
-        <Map className='map' defaultState={{
-            center: [54.083866, 28.314445],
-            zoom: 16,
-        }}>
-        <Placemark geometry={[54.083866, 28.314445]} />
-        </Map>
-    </YMaps>
-    </div>
-    </div> 
-}
-
-const mapStateToProps = (state) => ({
-    tools: state
-});
-
-const mapDispatchToProps = {
-    fetchTools,
-    showTools,
-};
-
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps,
-)(Main);
+*/
