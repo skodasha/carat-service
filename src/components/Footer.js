@@ -17,9 +17,9 @@ function Footer() {
                 </div>
                 <div className='fot-nav'>
                     <ul className='fot-container'>
-                        <li className='fot-li'><a className='fot-a' href='/carat-service/#/catalog'>Каталог</a></li>
-                        <li className='fot-li'><a className='fot-a' href='/carat-service/#/catalog'>О нас</a></li>
-                        <li className='fot-li'><a className='fot-a' href='/carat-service/#/catalog'>Контакты</a></li>
+                        <li className='fot-li'><a className='fot-a' href='/catalog'>Каталог</a></li>
+                        <li className='fot-li'><a className='fot-a' href='/about'>О нас</a></li>
+                        <li className='fot-li'><a className='fot-a' href='#'>Контакты</a></li>
                     </ul>
                 </div>
                 <div className='fot-adr'>

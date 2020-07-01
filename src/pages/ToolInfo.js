@@ -7,10 +7,11 @@ import Footer from '../components/Footer';
 import '../styles/main.css';
 
 function ToolInfo(prop) {
-    console.log(window.location)
+    let tool = JSON.parse(decodeURI(window.location.search.slice(6)))
+
     return (<div>
         <Head/>
-        <Info/>
+        <Info tool={tool}/>
         <YMaps>
             <Map className='map' defaultState={{
                 center: [54.083866, 28.314445],

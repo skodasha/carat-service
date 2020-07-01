@@ -14,13 +14,14 @@ function Catalog({ fetchTools, showTools, filterTools, findTools, tools}) {
     //const [findTool, setFindTool] = useState(search);
 
     useEffect(() => {
-        fetchTools();      
+        fetchTools(); 
+        //findTools(window.location.search.slice(8));     
 	},[]);
 
     useEffect(() => {
     }, [tools])
     
-   // console.log(tools, findTool)
+    
     return (<div>
         <Head/>
         <div className='wrapper-catalog'>

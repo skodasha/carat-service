@@ -1,0 +1,39 @@
+.ab-item{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.ab-img1{
+    width: 532px;
+    height: 350px;
+    z-index: 1;
+}
+
+.ab-text{
+    margin-left: 4%;
+    margin-right: 4%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.rec1{
+    position: absolute;
+    z-index: 0;
+    top: 320px;
+    left: -55px;
+}
+
+.rec2{
+    position: absolute;
+    z-index: 0;
+    top: 780px;
+    right: 0;
+}

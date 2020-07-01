@@ -8,6 +8,7 @@
     float: left;
     margin-left: 15px;
     margin-bottom: 15px;
+    display: block;
 } 
 
 .list .top-img{
@@ -25,4 +26,9 @@
     font-size: 14px;
     line-height: 140%;
     color: #231F1C;
+}
+
+.loader{
+    width: 10%;
+    margin-left: 35%;
 }
