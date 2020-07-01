@@ -4,7 +4,7 @@
 }
 .contacts{
     height: 50px;
-    width: 90%;
+    width: 1196px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@
 }
 
 .wrapper{
-    width: 90%;
+    width: 1196px;
     height: 100%;
     margin: 0 auto;
     display: flex;

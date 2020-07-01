@@ -6,11 +6,12 @@
 
 .header{
     height: 750px;
+    width: 100%;
     background: url('../pictures/bg.svg');
 }
 
 .wrapper-header{
-    width: 90%;
+    width: 1196px;
     height: 100%;
     margin: 0 auto;
     position: relative;

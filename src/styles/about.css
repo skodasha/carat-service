@@ -6,8 +6,10 @@
 
 .about{
     height: 828px;
+    margin: 0 auto;
     margin-bottom: 50px;
     position: relative;
+    width: 1196px;
 }
 
 .about-h2{
@@ -24,6 +26,7 @@
 .img-rect{
     position: absolute;
     top: 178px;
+    left:-5%;
 }
 
 .img-rect2{
@@ -35,7 +38,7 @@
 .img-img{
     position: absolute;
     top: 111px;
-    left: 11.26%;
+    left: 8.26%;
 }
 
 .img-p2{

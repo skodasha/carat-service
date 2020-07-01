@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../styles/footer.css';
 import logo from '../pictures/logo.svg';
 import glog from '../pictures/glog.svg';
@@ -9,7 +9,7 @@ import fotemail from '../pictures/fotemail.svg';
 
 function Footer() {
     return(
-        <div className='footer' id='footer'>
+        <div className='footer'>
             <div className='wrapper-footer'>
                 <div className='fot-logo'>
                     <img src={logo} alt='logo'/>
@@ -42,7 +42,7 @@ function Footer() {
                         <div className='fot-h4'>8 017 75 34 798</div>
                     </div>
                     <div className='fot-work'>
-                        <img src={fottime} alt='icon'/>
+                        <img src={fotemail} alt='icon'/>
                         <div className='fot-h4'>karat.servis@tut.by</div>
                     </div>
                 </div>
