@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Heavy.ttf") format("truetype"),
+    url("../fonts/Lato-Medium.ttf") format("truetype");
+}
+
+.about{
+    height: 828px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.about-h2{
+    margin: 0 auto;
+    width: 214px;
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    color: #231F1C;
+}
+
+.img-rect{
+    position: absolute;
+    top: 178px;
+}
+
+.img-rect2{
+    position: absolute;
+    top: 303px;
+    right: 8.3%;
+}
+
+.img-img{
+    position: absolute;
+    top: 111px;
+    left: 11.26%;
+}
+
+.img-p2{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: 203px;
+    right: 11.26%;
+}
+
+.img-p3{
+    position: absolute;
+    width: 220px;
+    height: 200px;
+    top: 433px;
+    right: 23.51%;
+}
+
+.about-p1{
+    width: 28.48%;
+    height: 110px;
+    position: absolute;
+    top: 220px;
+    left: 41.74%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.about-p2{
+    width: 32.91%;
+    height: 110px;
+    position: absolute;
+    top: 511px;
+    left: 23.8%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.about-p3{
+    width: 32.18%;
+    height: 110px;
+    position: absolute;
+    top: 688px;
+    left: 39.74%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000; 
+}

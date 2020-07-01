@@ -4,48 +4,65 @@ import thunkMiddleware from 'redux-thunk';
 import db from '../database/config';
 
 const SHOW_TOOLS = 'SHOW_TOOLS';
-const DB_NAME = 'строительные_смеси';
+const FILTER_TOOLS = 'FILTER_TOOLS';
+const FIND_TOOLS = 'FIND_TOOLS';
+const DATABASE = db.database().ref();
+
+let allTools = {};
 
 const reducerTools = (state = [], action) => {
 	switch (action.type) {
 		case SHOW_TOOLS:
-            return [...action.payload];
+            return [...action.payload[action.category][action.subcategory]];
+        case FILTER_TOOLS:
+            return [...action.payload[action.category][action.subcategory].filter(item => item.brand == action.brand)]
+        case FIND_TOOLS:
+            let result = []
+            for (const key in action.payload['строительные_смеси']) {
+               // console.log([...action.payload['строительные_смеси'][key].filter(i => i.title.includes(action.title))]);
+                result = [...result,...action.payload['строительные_смеси'][key].filter(i => i.title.toLowerCase().includes(action.title))]
+            }
+            console.log(result)
+            return result
 		default:
 			return state;
 	}
 };
 
-const database = db.database().ref().child(DB_NAME).child('штукатурка')
-
 let store = createStore(reducerTools, applyMiddleware(thunkMiddleware));
 
-export function showTools (tools = [], section, subsection) {    
-    let filterTools;
-
-    if(section !== 'all'){
-        filterTools = tools.filter(item => item.section === section);
-    }
-    else{
-        filterTools = tools;
-    }
-
-    if(subsection !== 'all'){
-        filterTools = filterTools.filter(item => item.subsection === subsection);
-    }
-
-    return {
-        type: SHOW_TOOLS,
-        payload: filterTools,
+export function findTools (title) {
+    return{
+        type: FIND_TOOLS,
+        payload: allTools,
+        title: title.toLowerCase()
     }
 }
 
-export function fetchTools (section, subsection, findTool) { 
+export function filterTools (category, subcategory, brand){
+    return{
+        type: FILTER_TOOLS,
+        payload: allTools,
+        category: category,
+        subcategory: subcategory,
+        brand: brand
+    }
+}
+
+export function showTools (category, subcategory) { 
+    return {
+        type: SHOW_TOOLS,
+        payload: allTools,
+        category: category,
+        subcategory: subcategory
+    }
+}
+
+export function fetchTools () { 
 	return (dispatch) => {
-        database.on('value', snap => {
-            let result = snap.val()
-            let tools = (findTool) ? result.filter(item => item.title.toLowerCase().includes(findTool.toLowerCase())):
-                result;
-            dispatch(showTools(tools, section, subsection))
+        DATABASE.on('value', snap => {
+            allTools = snap.val()
+            dispatch(showTools('строительные_смеси', 'штукатурка'))
         })
 	} 
 }

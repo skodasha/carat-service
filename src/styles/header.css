@@ -1,4 +1,110 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Heavy.ttf") format("truetype"),
+    url("../fonts/Lato-Medium.ttf") format("truetype");
+}
+
 .header{
-    height: 500px;
-    background-color: rgb(175, 170, 163);
+    height: 750px;
+    background: url('../pictures/bg.svg');
+}
+
+.wrapper-header{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-h3{  
+    width: 790px;
+    height: 102px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 197px;
+}
+
+.header-h2{
+    width: 440px;
+    height: 28px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+    position: absolute;
+    top: 319px;
+}
+
+.header-catalog{
+    width: 220px;
+    height: 60px;
+    background: #FFC82E;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 387px;
+}
+
+.header-catalog:hover{
+    background: #FFD55F;
+}
+
+.header-catalog:active{
+    background: #FFB82E;
+}
+
+.header-a{
+    text-decoration: none;
+    color: #231F1C;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.sale{
+    width: 505px;
+    height: 251px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.sale-info{
+    width: 470px;
+    height: 210px;
+    margin-top: -109px;
+    margin-left: 35px;
+    background: #231F1C;
+}
+
+.sale-title{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 48px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.sale-description{
+    width: 398px;
+    margin-left: 49px;
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
 }

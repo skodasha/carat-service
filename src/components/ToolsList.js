@@ -1,31 +1,34 @@
 import React, { useEffect, useState } from 'react';
+import loader from '../pictures/loader.svg';
 import '../styles/tools.css';
+import {Redirect} from "react-router-dom";
 
 function ToolsList({tools}) {
+    const [showInfo, setShowInfo] = useState(false);
+
+    function onButtonClick() {
+        setShowInfo(true)
+    }
+
+    if(showInfo){
+        return <Redirect to={{pathname: '/info', state: { tool: {id:122} }}}/>
+    }
+
     return(
         <div className='list'>
-                    {
-                        (tools.length == 0) ? <p>Sorry, nothing was found...</p>: null
-                    }
-                    <table><tbody>
-                    {tools.map(
+            {
+                (tools.length == 0) ? <img src={loader} alt='loading...'/>: null
+            }
+               {tools.map(
                     (item, idx) =>
-                    <tr key={idx}>
-                    <td className="tool--item">
-                        <img className="imgTool" src={item.image}/>
-                        <div className="tool--item-info">
-                            <h3>{item.title}</h3>
-                            <h4>{item.brand}</h4>
-                            <h5>{item.description}</h5>
-                            <div className='toolPrice'>
-                                <h1>{item.price}</h1>
-                            </div>
-                        </div>    
-                    </td>
-                    </tr>
-                    )}
-                    </tbody></table>
-
+                        <div key={idx}className='top-item' onClick={onButtonClick}>
+                            <img className='top-img' src={item.image} alt='tool'/>
+                            <div className='top-title'>{item.title}</div>
+                            <div className='top-price'>{item.price}</div>
+                        </div>
+                 
+                )}
+         
         </div>
     )
 }

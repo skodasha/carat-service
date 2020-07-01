@@ -7,24 +7,18 @@ import Header from '../components/Header';
 import Advantages from '../components/Advantages';
 import TopSales from '../components/TopSales';
 import Footer from '../components/Footer';
+import About from '../components/About';
 import '../styles/main.css';
 
 function Main({ fetchTools, tools}) {
-    const [findTool, setFindTool] = useState();
-    useEffect(() => {
-        fetchTools('all', 'all');
-	},[]);
+    
 
-	useEffect(() => {
-        console.log(tools)
-    }, [tools]);
-
-    console.log(tools)
     return (<div>
         <Head/>
         <Header/>
         <Advantages/>
         <TopSales/>
+        <About/>
         <YMaps>
             <Map className='map' defaultState={{
                 center: [54.083866, 28.314445],

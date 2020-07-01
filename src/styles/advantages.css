@@ -1,4 +1,69 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Heavy.ttf") format("truetype"),
+    url("../fonts/Lato-Medium.ttf") format("truetype"),
+    url("../fonts/Lato-Regular.ttf") format("truetype"),
+}
+
 .main{
-    height: 300px;
-    background-color: rgb(231, 230, 228);
+    height: 301px;
+    
+}
+
+.ad-h2{
+    margin: 0 auto;
+    width: 179px;
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    color: #231F1C;
+}
+
+.adv{
+    width: 1170px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adv-item{
+    width: 270px;
+    height: 150px;
+}
+
+.adv-img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.adv-h{
+    width: max-content;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.adv-hr{
+    background: #FFC82E;
+    width: 198px;
+    height: 3px;
+    border: none;
+}
+
+.adv-p{
+    width: 198px;
+    margin: 0 auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    color: #231F1C;
 }
