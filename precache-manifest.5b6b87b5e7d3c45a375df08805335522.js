@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f67f3706c12497cceab8d4a06089ac9",
+    "revision": "c8fec37f3b805049eec6d155c503b193",
     "url": "/carat-service/index.html"
   },
   {
-    "revision": "4ee9cc363ed97de8adbf",
-    "url": "/carat-service/static/css/main.31c7ec74.chunk.css"
+    "revision": "2b70fc597b16c6f5c469",
+    "url": "/carat-service/static/css/main.37ffe377.chunk.css"
   },
   {
-    "revision": "a82f9c45213e1bc6a7bc",
-    "url": "/carat-service/static/js/2.3ac6b8de.chunk.js"
+    "revision": "6e8021ae8577fdd63394",
+    "url": "/carat-service/static/js/2.1fd3c6c6.chunk.js"
   },
   {
     "revision": "0135287500bd9d64203d07b4f33f971f",
-    "url": "/carat-service/static/js/2.3ac6b8de.chunk.js.LICENSE.txt"
+    "url": "/carat-service/static/js/2.1fd3c6c6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4ee9cc363ed97de8adbf",
-    "url": "/carat-service/static/js/main.8862aafb.chunk.js"
+    "revision": "2b70fc597b16c6f5c469",
+    "url": "/carat-service/static/js/main.a3576eaf.chunk.js"
   },
   {
     "revision": "fa2aa54fa7578f509e2d",
