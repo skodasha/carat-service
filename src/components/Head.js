@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/head.css';
 import address from '../pictures/adress.svg';
 import call from '../pictures/call.svg';
@@ -7,8 +7,6 @@ import phone from '../pictures/phone.svg';
 import time from '../pictures/time.svg';
 import logo from '../pictures/logo.svg';
 import searchIcon from '../pictures/search.svg';
-
-import {Redirect} from "react-router-dom";
 
 function Head() {
     const [search, setSearch] = useState('');
@@ -44,9 +42,9 @@ function Head() {
                 <div className='wrapper'>
                     <img src={logo} alt='logo'/>
                     <ul className='nav-container'>
+                        <li className='nav-li'><a className='nav-a' href='/carat-service'>ГЛАВНАЯ</a></li>
                         <li className='nav-li'><a className='nav-a' href='/catalog'>КАТАЛОГ</a></li>
                         <li className='nav-li'><a className='nav-a' href='/about'>О НАС</a></li>
-                        <li className='nav-li'><a className='nav-a' href='#footer'>КОНТАКТЫ</a></li>
                     </ul>
                     <div className='nav-search'>
                         <input className='nav-input' placeholder='Название товара...' onChange={onChangeSearch}/>

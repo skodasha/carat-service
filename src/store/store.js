@@ -11,16 +11,26 @@ const DATABASE = db.database().ref();
 let allTools = {};
 
 const reducerTools = (state = [], action) => {
+    let result = []
 	switch (action.type) {
 		case SHOW_TOOLS:
-            return [...action.payload[action.category][action.subcategory]];
+            result = action.subcategory ? [...action.payload[action.category][action.subcategory]]:
+            [...action.payload[action.category]]
+            return result
         case FILTER_TOOLS:
-            return [...action.payload[action.category][action.subcategory].filter(item => item.brand == action.brand)]
+            result = action.subcategory ? [...action.payload[action.category][action.subcategory].filter(item => item.brand === action.brand)]:
+            [...action.payload[action.category].filter(item => item.brand === action.brand)]
+            return result
         case FIND_TOOLS:
-            let result = []
-            for (const key in action.payload['строительные_смеси']) {
-               // console.log([...action.payload['строительные_смеси'][key].filter(i => i.title.includes(action.title))]);
-                result = [...result,...action.payload['строительные_смеси'][key].filter(i => i.title.toLowerCase().includes(action.title))]
+            result = []
+            for(let item in action.payload){
+                if(action.payload[item] instanceof Array){
+                    result = [...result,...action.payload[item].filter(i => i.title.toLowerCase().includes(action.title))]
+                }else{
+                    for (let key in action.payload[item]) {
+                        result = [...result,...action.payload[item][key].filter(i => i.title.toLowerCase().includes(action.title))]
+                    }
+                }
             }
             console.log(result)
             return result
@@ -58,11 +68,17 @@ export function showTools (category, subcategory) {
     }
 }
 
-export function fetchTools () { 
+export function fetchTools (findTool) {
 	return (dispatch) => {
         DATABASE.on('value', snap => {
             allTools = snap.val()
-            dispatch(showTools('строительные_смеси', 'штукатурка'))
+            
+            if(findTool){
+                dispatch(findTools(decodeURI(findTool)))
+            }else{
+                console.log(allTools)
+                dispatch(showTools('stroitelnie_smesi','shtukaturka'))
+            }
         })
 	} 
 }

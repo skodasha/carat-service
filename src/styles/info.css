@@ -94,16 +94,8 @@
     width: 301px;
 }
 
-.sert{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.sert-img{
-    height: 299px;
+@media screen and (max-width: 920px){
+    .wrap-img{
+        width: 85%;
+    }
 }

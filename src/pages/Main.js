@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import { fetchTools, showTools } from '../store/store';
@@ -11,8 +11,6 @@ import About from '../components/About';
 import '../styles/main.css';
 
 function Main({ fetchTools, tools}) {
-    
-
     return (<div>
         <Head/>
         <Header/>

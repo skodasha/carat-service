@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchTools, showTools, filterTools, findTools } from '../store/store';
 
@@ -9,18 +9,15 @@ import Menu from '../components/Menu';
 
 import '../styles/main.css';
 
-function Catalog({ fetchTools, showTools, filterTools, findTools, tools}) {
-    //let search = window.location.hash.slice(17);
-    //const [findTool, setFindTool] = useState(search);
+function Catalog({ fetchTools, tools}) {
+    let search = window.location.search.slice(8);
 
     useEffect(() => {
-        fetchTools(); 
-        //findTools(window.location.search.slice(8));     
+       fetchTools(search);      
 	},[]);
 
     useEffect(() => {
     }, [tools])
-    
     
     return (<div>
         <Head/>
@@ -47,12 +44,3 @@ export default connect(
 	mapStateToProps,
 	mapDispatchToProps,
 )(Catalog);
-
-/*
-<div>
-            <button onClick={e => showTools('строительные_смеси', 'шпатлевка')}>шпатлевка</button>
-            <button onClick={e => showTools('строительные_смеси', 'штукатурка')}>штукатурка</button>
-            <button onClick={e => filterTools('строительные_смеси', 'штукатурка', 'ilmax')}>штукатурка ilmax</button>
-        </div>
-        <button onClick={e => findTools('64')}>поиск</button>
-        <ToolsList tools={tools}/> */

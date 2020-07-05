@@ -9,7 +9,7 @@
     margin: 0 auto;
     margin-bottom: 50px;
     position: relative;
-    width: 1196px;
+    width: 90%;
 }
 
 .about-h2{
@@ -58,7 +58,7 @@
 }
 
 .about-p1{
-    width: 28.48%;
+    width: 27.48%;
     height: 110px;
     position: absolute;
     top: 220px;
@@ -94,4 +94,10 @@
     font-size: 16px;
     line-height: 140%;
     color: #000000; 
+}
+
+@media screen and (max-width: 1000px){
+    .about{
+        display: none;
+    }
 }

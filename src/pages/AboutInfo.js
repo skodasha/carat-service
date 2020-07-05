@@ -4,7 +4,7 @@ import Rectangle from '../pictures/Rectangle.svg';
 import Head from '../components/Head';
 import Footer from '../components/Footer';
 
-import abim1 from '../pictures/abim1.svg';
+import abim1 from '../pictures/abim1.png';
 import abim2 from '../pictures/abim2.svg';
 import rab1 from '../pictures/rab1.svg';
 import rab2 from '../pictures/rab2.svg';

@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../styles/about.css';
 import Rectangle from '../pictures/Rectangle.svg';
 import rect from '../pictures/rect.svg';
 import rect2 from '../pictures/rect2.svg';
-import img from '../pictures/img.svg';
+import img from '../pictures/img.png';
 import p2 from '../pictures/2.svg';
 import p3 from '../pictures/3.svg';
 
 function About() {
     return(
         <div className='about'>
-            <h2 className='about-h2'><img src={Rectangle}/>  Наша компания  <img src={Rectangle}/></h2>
+            <h2 className='about-h2'><img src={Rectangle} alt='img'/>  Наша компания  <img src={Rectangle} alt='img'/></h2>
             <img src={rect} className='img-rect' alt='image'/>
             <img src={rect2} className='img-rect2' alt='image'/>
             <img src={img} className='img-img' alt='image'/>

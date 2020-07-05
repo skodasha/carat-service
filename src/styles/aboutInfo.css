@@ -1,5 +1,5 @@
 .ab-item{
-    width: 1169px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -9,8 +9,6 @@
 }
 
 .ab-img1{
-    width: 532px;
-    height: 350px;
     z-index: 1;
 }
 
@@ -36,4 +34,44 @@
     z-index: 0;
     top: 780px;
     right: 0;
+}
+
+
+.sert{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 299px;
+}
+
+.sert-img{
+    height: 100%;
+}
+
+@media screen and (max-width: 1040px){
+    .rec1, .rec2{
+        display: none;
+    }
+    .sert-img{
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .ab-img1{
+        display: none;
+    }
+    .sert-img{
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .sert-img{
+        height: 40%;
+    }
 }

@@ -6,7 +6,7 @@
 }
 
 .menu{
-    width: 270px;
+    width: 25%;
     margin-top: 30px;
 }
 
@@ -19,9 +19,10 @@
     font-size: 14px;
     line-height: 17px;
     border: none;
-    width: 270px;
+    width: 100%;
     cursor: pointer;
     outline: none;
+    text-align: left;
 }
   
 .dropdown {
@@ -44,23 +45,20 @@
     border: none;
     outline: none;
     background: #393532;
-    width: 270px;
+    width: 70%;
+    text-align: left;
 }
   
 .menu-item:hover {
     background: #FFC82E;
 }
 
-.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
+.block{
     display: block;
 }
-  
-
-.dropdown:hover .dropbtn {
-    
+.dropbtn:hover{
+    color: #eeeeeec0;
 }
-
-
 .dropbtn2 {
     background: #393532;
     color: white;
@@ -70,9 +68,10 @@
     font-size: 14px;
     line-height: 17px;
     border: none;
-    width: 270px;
+    width: 100%;
     cursor: pointer;
     outline: none;
+    text-align: left;
 }
   
 .dropdown2 {
@@ -111,12 +110,18 @@
 .dropdown2:hover .dropdown-content2 {
     display: block;
     position: absolute;
-    left: 270px;
-    width: 270px;
+    left: 100%;
+    width: 100%;
     top: 0px;
     z-index: 1;
 }
   
 .dropbtn2:hover{
     background: #FFC82E;
+}
+
+@media screen and (max-width: 920px){
+    .menu{
+        width: 40%;
+    }
 }

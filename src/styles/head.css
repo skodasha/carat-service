@@ -4,7 +4,7 @@
 }
 .contacts{
     height: 50px;
-    width: 1196px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@
 }
 
 .wrapper{
-    width: 1196px;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -105,4 +105,11 @@
     width: 24px;
     height: 24px;
     margin: 8px 14px 8px 14px;
+}
+
+@media screen and (max-width: 920px){
+    .nav-container{
+        display: none;
+    }
+
 }

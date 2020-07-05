@@ -6,13 +6,12 @@
 }
 
 .main{
-    height: 301px;
-    
+    height: 301px;   
 }
 
 .ad-h2{
     margin: 0 auto;
-    width: 1196px;
+    width: 90%;
     text-align: center;
     margin-top: 50px;
     font-style: normal;
@@ -23,7 +22,7 @@
 }
 
 .adv{
-    width: 1170px;
+    width: 90%;
     height: 150px;
     margin: 0 auto;
     margin-top: 30px;
