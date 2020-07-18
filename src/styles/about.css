@@ -26,19 +26,19 @@
 .img-rect{
     position: absolute;
     top: 178px;
-    left:-5%;
+    left:-10%;
 }
 
 .img-rect2{
     position: absolute;
     top: 303px;
-    right: 8.3%;
+    right: 3%;
 }
 
 .img-img{
     position: absolute;
     top: 111px;
-    left: 8.26%;
+    left: 3%;
 }
 
 .img-p2{
@@ -46,7 +46,7 @@
     width: 220px;
     height: 220px;
     top: 203px;
-    right: 11.26%;
+    right: 8%;
 }
 
 .img-p3{
@@ -54,7 +54,7 @@
     width: 220px;
     height: 200px;
     top: 433px;
-    right: 23.51%;
+    right: 21%;
 }
 
 .about-p1{
@@ -75,7 +75,7 @@
     height: 110px;
     position: absolute;
     top: 511px;
-    left: 23.8%;
+    left: 19%;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

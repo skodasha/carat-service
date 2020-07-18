@@ -7,46 +7,17 @@ import Catalog from './pages/Catalog';
 import ToolInfo from './pages/ToolInfo';
 import About from './pages/AboutInfo';
 
-const routes = [
-  {
-    path: "/carat-service",
-    component: Main
-  },
-  {
-    path: "/catalog",
-    component: Catalog,
-  },
-  {
-    path: "/info",
-    component: ToolInfo,
-  },
-  {
-    path: "/about",
-    component: About,
-  }
-];
-
 function App() {
   return (
     <Router>
-    <Switch>
-          {routes.map((route, i) => (
-            <RouteWithSubRoutes key={i} {...route} />
-          ))}
-        </Switch>
-  </Router>
+            <Switch>
+                <Route path='/' exact component={Main}/>
+                <Route path='/catalog' exact component={Catalog}/>
+                <Route path='/info' exact component={ToolInfo}/>
+                <Route path='/about' exact component={About}/>
+            </Switch>   
+        </Router>
 
-  );
-}
-
-function RouteWithSubRoutes(route) {
-  return (
-    <Route
-      path={route.path}
-      render={props => (
-        <route.component {...props} routes={route.routes} />
-      )}
-    />
   );
 }
 

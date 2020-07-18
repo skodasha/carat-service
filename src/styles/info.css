@@ -1,7 +1,8 @@
 .info{
     width: 90%;
     margin: 0 auto;
-    margin-top: 50px;   
+    margin-top: 50px; 
+    margin-bottom: 30px;  
 }
 
 .info-item{
@@ -86,6 +87,7 @@
     letter-spacing: 0.03em;   
     color: #000000;
     border-bottom: 1px solid #FFC82E;
+    text-decoration: none;
 }
 
 .info-hr{
@@ -95,7 +97,45 @@
 }
 
 @media screen and (max-width: 920px){
+    .info-item{
+        display: block;
+        height: auto;
+        margin-bottom: -30px;
+    }
+    .info-item-desc{
+        width: 98%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .info-title{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .info-brand{
+        font-size: 14px;
+        line-height: 17px;
+    }
     .wrap-img{
-        width: 85%;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+    .info-img{
+        display: block;
+        width: auto;
+        margin: 0 auto;
+    }
+    .info-description{
+        width: 98%;
+        margin: 0 auto;
+    }
+    .info-number{
+        display: block;
+        font-size: 16px;
+        line-height: 127.5%;
+        width: 250px;
+        margin: 0px;
+        margin-bottom: 20px;
+        text-decoration: none;
     }
 }

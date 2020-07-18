@@ -14,3 +14,15 @@
     justify-content: space-between;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 610px){
+    .map{
+        margin: 0;
+        width: 100% !important;
+    }
+    .wrapper-catalog{
+        width: 100%;
+        display: block;
+        height: max-content;
+    }
+}

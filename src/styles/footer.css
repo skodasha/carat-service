@@ -76,4 +76,56 @@
     line-height: 19px;
     color: #FFFFFF;
     margin-left: 7px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 920px){
+    .footer{
+        height: 380px;
+    }
+    .wrapper-footer{
+        display: block;
+    }
+    .fot-nav{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: -10px;
+    }
+    .fot-li{
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+    .fot-adr, .fot-phone{
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 158px;
+    }
+    .fot-phone{
+        margin-top: 0px;
+    }
+    .fot-work{
+        width: 162px;
+    }
+    .fot-logo{
+        margin: 0 auto;
+        margin-top: -30px;
+    }
+    .fot-logo > img {
+        display: block;
+        margin: 0 auto;
+    }
+    .fot-h4{
+        font-size: 14px;
+        width: 140px;
+    }
+    .fot-h2{
+        position: relative;
+        font-size: 12px;
+        top: 310px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }

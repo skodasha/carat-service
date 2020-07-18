@@ -9,31 +9,31 @@ import discount from '../pictures/discount.svg';
 function Advantages() {
     return(
         <div className='main'>
-            <h2 className='ad-h2'><img src={Rectangle} alt='icon'/>  Почему мы?  <img src={Rectangle}/></h2>
+            <h1 className='ad-h2'><img src={Rectangle} alt='square'/>  Почему мы?  <img src={Rectangle} alt='square'/></h1>
             <div className='adv'>
                 <div className='adv-item'>
-                    <div className='adv-img'><img src={data} alt='icon'/></div>
-                    <div className='adv-h'>Обновляемый асcортимент</div>
+                    <div className='adv-img'><img src={data} alt='range'/></div>
+                    <h2 className='adv-h'>Обновляемый асcортимент</h2>
                     <hr className='adv-hr'/>
-                    <div className='adv-p'>Большой выбор материалов лучших производителей</div>
+                    <h3 className='adv-p'>Большой выбор материалов лучших производителей</h3>
                 </div>
                 <div className='adv-item'>
-                    <div className='adv-img'><img src={car} alt='icon'/></div>
-                    <div className='adv-h'>Быстрая доставка</div>
+                    <div className='adv-img'><img src={car} alt='delivery'/></div>
+                    <h2 className='adv-h'>Быстрая доставка</h2>
                     <hr className='adv-hr'/>
-                    <div className='adv-p'>Доставка в любое место в Жодино за 24 часа</div>
+                    <h3 className='adv-p'>Доставка в любое место в Жодино</h3>
                 </div>
                 <div className='adv-item'>
-                    <div className='adv-img'><img src={discount} alt='icon'/></div>
-                    <div className='adv-h'>Приятные цены</div>
+                    <div className='adv-img'><img src={discount} alt='price'/></div>
+                    <h2 className='adv-h'>Приятные цены</h2>
                     <hr className='adv-hr'/>
-                    <div className='adv-p'>Самые низкие цены в городе, налаженная система скидок</div>
+                    <h3 className='adv-p'>Самые низкие цены в городе, налаженная система скидок</h3>
                 </div>
                 <div className='adv-item'>
-                    <div className='adv-img'><img src={chat} alt='icon'/></div>
-                    <div className='adv-h'>Консультации</div>
+                    <div className='adv-img'><img src={chat} alt='consultation'/></div>
+                    <h2 className='adv-h'>Консультации</h2>
                     <hr className='adv-hr'/>
-                    <div className='adv-p'>Ответы профессионалов на любые ваши вопросы</div>
+                    <h3 className='adv-p'>Ответы профессионалов на любые ваши вопросы</h3>
                 </div>
             </div>
         </div>

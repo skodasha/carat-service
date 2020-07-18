@@ -2,11 +2,10 @@ import React from 'react';
 import '../styles/info.css';
 
 function Info({ tool }) {
-    console.log(tool)
     return (
         <div className='info'> 
             <div className='info-item'>
-                <div className='wrap-img'><img className='info-img' src={tool.image} alt='tool'/></div>
+                <div className='wrap-img'><img className='info-img' src={tool.image} alt='строительные материалы'/></div>
                 <div className='info-item-desc'>
                     <div className='info-title'>{tool.title}</div>
                     <div className='info-brand'>Бренд: {tool.brand}</div>
@@ -14,7 +13,7 @@ function Info({ tool }) {
                 </div>
             </div>
             <div className='info-description'>{tool.description}</div>
-            <div className='info-number'>Для заказа: +375 29 682 02 35</div>
+            <a className='info-number' href='tel:+375296820235'>Для заказа: +375 29 682 02 35</a>
         </div>
     ) 
 }

@@ -18,10 +18,10 @@ function AboutInfo() {
     return (
         <div className='about-info'> 
             <Head/>
-            <h2 className='top-h2'><img src={Rectangle} alt='icon'/>  Наша компания  <img src={Rectangle}/></h2>
-            <img className='rec1' src={rab1} alt='rec'/>
+            <h2 className='top-h2'><img src={Rectangle} alt='square'/>  Наша компания  <img src={Rectangle} alt='square'/></h2>
+            <img className='rec1' src={rab1} alt='image'/>
             <div className='ab-item'>
-                <img className='ab-img1' src={abim1} alt='img'/>
+                <img className='ab-img1' src={abim1} alt='карат-сервис'/>
                 <div className='ab-text'>Наша компания предлагает современные строительные материалы физическим лицам и организациям. Все представленные строительные материалы проверены на практике и имеют высокое качество, подтвержденное сертификатами.
                 <br/><br/>Ознакомиться со списком предлагаемых к продаже строительных материалов можно в каталоге нашего сайта и в магазине по адресу г. Жодино ул. Брестская, 29. Вы можете приобрести необходимые строительные материалы и оформить доставку
                 <br/><br/>Выбирая нас, вы получаете надежного партнера, который готов выполнять свои обязательства на высоком уровне. Вы можете рассчитывать на предоставление полной информации по предлагаемой строительной продукции и профессиональные рекомендации со стороны наших специалистов</div>
@@ -32,16 +32,16 @@ function AboutInfo() {
                 <br/><br/>Доступные цены. Дешевле стройматериалы купить просто невозможно. При этом мы следим за изменениями цен, чтобы предложить своим клиентам наиболее выгодное сочетание цена-качество
                 <br/><br/>Возможность доставки. Не достаточно стройматериалы купить – их необходимо еще и доставить. С нами вам не придется тратить на это время. Мы оперативно доставим Вашу покупку в указанное место
                 <br/><br/>Удобство заказа и оплаты, возможность консультации. Менеджер поможет определиться с выбором, подскажет, что лучше для решения определенной строительной задачи</div>
-                <img className='ab-img1' src={abim2} alt='img'/>
+                <img className='ab-img1' src={abim2} alt='image'/>
             </div>
             <img className='rec2' src={rab2} alt='rec'/>
             <h2 className='top-h2'><img src={Rectangle} alt='icon'/>  Сертификаты  <img src={Rectangle}/></h2>
             <div className='sert'>
-                <img className='sert-img' src={s1} alt='rec'/>
-                <img className='sert-img' src={s2} alt='rec'/>
-                <img className='sert-img' src={s3} alt='rec'/>
-                <img className='sert-img' src={s4} alt='rec'/>
-                <img className='sert-img' src={s5} alt='rec'/>
+                <img className='sert-img' src={s1} alt='сертификат'/>
+                <img className='sert-img' src={s2} alt='сертификат'/>
+                <img className='sert-img' src={s3} alt='сертификат'/>
+                <img className='sert-img' src={s4} alt='сертификат'/>
+                <img className='sert-img' src={s5} alt='сертификат'/>
             </div>
             <Footer/>
         </div>

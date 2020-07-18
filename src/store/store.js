@@ -32,7 +32,6 @@ const reducerTools = (state = [], action) => {
                     }
                 }
             }
-            console.log(result)
             return result
 		default:
 			return state;
@@ -68,6 +67,14 @@ export function showTools (category, subcategory) {
     }
 }
 
+export function fetchTop (){
+    return (dispatch) => {
+        DATABASE.on('value', snap => {
+            allTools = snap.val()
+            dispatch(showTools('top',''))
+        })
+	}
+}
 export function fetchTools (findTool) {
 	return (dispatch) => {
         DATABASE.on('value', snap => {
@@ -76,7 +83,6 @@ export function fetchTools (findTool) {
             if(findTool){
                 dispatch(findTools(decodeURI(findTool)))
             }else{
-                console.log(allTools)
                 dispatch(showTools('stroitelnie_smesi','shtukaturka'))
             }
         })

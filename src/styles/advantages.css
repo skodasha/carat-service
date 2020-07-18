@@ -6,7 +6,7 @@
 }
 
 .main{
-    height: 301px;   
+    height: 250px;   
 }
 
 .ad-h2{
@@ -66,4 +66,16 @@
     font-size: 12px;
     line-height: 140%;
     color: #231F1C;
+}
+
+@media screen and (max-width: 880px){
+    .main{
+        height: 700px;
+    }
+    .adv{
+        display: block;
+        width: 270px;
+        margin: 0 auto;
+        margin-top:20px;
+    }
 }

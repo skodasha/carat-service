@@ -5,7 +5,7 @@
 }
 
 .top{
-    height: 1040px;
+    height: 875px;
     background-color: #F9F9F9;
 }
 
@@ -45,7 +45,10 @@
     outline: 1px solid #FFB82E;
 }
 
-.top-img{
+.wrap-top-list{
+    width: 850px;
+    margin: 0 auto;
+    height: 630px;
 }
 
 .top-title{
@@ -61,14 +64,14 @@
 }
 
 .top-price{
-    width: 120px;
+    width: 220px;
     height: 30px;
     background-color: #231F1C;
     text-align: center;
     padding-top: 11px;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 19px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -78,18 +81,14 @@
     right: 0;
 }
 
-.top-catalog{
+.top-a{
+    display: block;
     width: 220px;
-    height: 60px;
-    background: #FFC82E;
+    height: 40px;
+    background-color: #FFC82E;
     outline: none;
     border: none;
     margin: 0 auto;
-    margin-top: 40px;
-    display: block;
-}
-
-.top-a{
     text-decoration: none;
     color: #231F1C;
     font-style: normal;
@@ -98,4 +97,23 @@
     line-height: 17px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 880px){
+    .top{
+        height: 2140px;
+    }
+    .wrap-top-list{
+        width: 270px;
+        margin: 0 auto;
+        height: 1200px;
+    }
+    .top-a{
+        margin-top: 700px;
+        padding-top: 20px;
+    }
 }

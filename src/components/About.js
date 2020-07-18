@@ -10,9 +10,9 @@ import p3 from '../pictures/3.svg';
 function About() {
     return(
         <div className='about'>
-            <h2 className='about-h2'><img src={Rectangle} alt='img'/>  Наша компания  <img src={Rectangle} alt='img'/></h2>
-            <img src={rect} className='img-rect' alt='image'/>
-            <img src={rect2} className='img-rect2' alt='image'/>
+            <h2 className='about-h2'><img src={Rectangle} alt='square'/>  Наша компания  <img src={Rectangle} alt='square'/></h2>
+            <img src={rect} className='img-rect' alt='жодино'/>
+            <img src={rect2} className='img-rect2' alt='square'/>
             <img src={img} className='img-img' alt='image'/>
             <img src={p2} className='img-p2' alt='image'/>
             <img src={p3} className='img-p3' alt='image'/>

@@ -3,7 +3,12 @@
     margin-top: 30px;
 }
 
-.list .top-item{
+.list-top{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.list .top-item, .list-top .top-item{
     width: 270px;
     height: 300px;
     float: left;
@@ -12,18 +17,18 @@
     display: block;
 } 
 
-.list .top-img{
+.list .top-img, .list-top .top-img{
     height: 100%;
 }
 
 .top-img-wrap{
     height: 160px;
-    width: max-content;
+    width: min-content;
     margin: 0 auto;
     margin-top: 5px;
 }
 
-.list .top-title{
+.list .top-title, .list-top .top-title{
     width: 250px;
     top: 190px;
     margin-left: 10px;
@@ -48,5 +53,19 @@
 @media screen and (max-width: 920px){
     .list{
         width: 60%;
+        min-height: 3500px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .list{
+        width: 100%;
+        display: block;
+    }
+    .list .top-item{
+        display: block;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
 }

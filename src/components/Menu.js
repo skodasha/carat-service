@@ -3,10 +3,14 @@ import '../styles/menu.css';
 import { connect } from 'react-redux';
 import { showTools, filterTools } from '../store/store';
 import $ from 'jquery';
+import ic from '../pictures/ic.svg';
 
 function Menu({ showTools, filterTools }){
     return(
         <div className='menu'>
+            <label for='toggle-2' className='toggle-menu2'>Категории<img src={ic} alt='taifun'/></label>
+            <input type='checkbox' className='input-menu' id='toggle-2'/>
+            <div class="dropdown0">
             <div class="dropdown">
                 <button class="dropbtn" onClick={e => $('#d4').toggleClass('block')}>Строительные смеси</button>
                 <div class="dropdown-content" id='d4'>
@@ -26,11 +30,6 @@ function Menu({ showTools, filterTools }){
                         </div>
                     </div>
                     <div class="dropdown2">
-                        <button class="dropbtn2" onClick={e => showTools('stroitelnie_smesi', 'klei_dly_plitki')}>Клеи для плитки</button>
-                        <div class="dropdown-content2">
-                            <button className='menu-item' onClick={e => filterTools('stroitelnie_smesi', 'klei_dly_plitki', 'ilmax')}>ilmax</button>
-                            <button className='menu-item' onClick={e => filterTools('stroitelnie_smesi', 'klei_dly_plitki', 'taifun')}>тайфун</button>
-                        </div>
                     </div>
                     <div class="dropdown2">
                         <button class="dropbtn2" onClick={e => showTools('stroitelnie_smesi', 'phyga')}>Фуга</button>
@@ -99,8 +98,8 @@ function Menu({ showTools, filterTools }){
             <div class="dropdown">
                 <button class="dropbtn" onClick={e => (showTools('kraski', ''), $('#d3').toggleClass('block'))}>Краски</button>
                 <div class="dropdown-content" id='d3'>
-                    <button className='menu-item' onClick={e => filterTools('gruntovki', '', 'condor')}>condor</button>
-                    <button className='menu-item' onClick={e => filterTools('gruntovki', '', 'taifun')}>тайфун</button>
+                    <button className='menu-item' onClick={e => filterTools('kraski', '', 'condor')}>condor</button>
+                    <button className='menu-item' onClick={e => filterTools('kraski', '', 'taifun')}>тайфун</button>
                 </div>
             </div>
             <div class="dropdown">
@@ -125,6 +124,7 @@ function Menu({ showTools, filterTools }){
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
